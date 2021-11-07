@@ -34,7 +34,7 @@ else:
     print("Tato možnost neexistuje... konec... ")
     quit()
     print(oddelovac)
-vybrany_text = text1
+vybrany_text = text
 
 # slovnik_textu = {}
 cista_slova = [slovo.strip(",.\n") for slovo in vybrany_text.rstrip(' ').split(" ")]
