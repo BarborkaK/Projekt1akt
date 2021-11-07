@@ -34,7 +34,6 @@ else:
     print("Tato možnost neexistuje... konec... ")
     quit()
     print(oddelovac)
-vybrany_text = text
 
 # slovnik_textu = {}
 cista_slova = [slovo.strip(",.\n") for slovo in vybrany_text.rstrip(' ').split(" ")]
@@ -75,7 +74,7 @@ for slovo in cista_slova:
 # print("Délka\nslov:|", "Výskyty:".ljust(15), "| Počet:")
 print("Délka\nslov:|", f" {'Výskyty:' : <13}  {'| Počet:'}")
 print(oddelovac)
-poradi = [cislo for cislo in range(1,max(dict_delek.keys()) + 1)]
+poradi = sorted(list(dict_delek.keys()))
 
 for delka_slov in poradi:
     opakovani = dict_delek[delka_slov]
